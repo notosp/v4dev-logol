@@ -371,15 +371,15 @@ color: #8C8CA2;">We also provide ship schedules for your reference</div>
 								<div class="card mb-0">
 									<div class="card-body">
 										<div class="row">
-											<div class="col-md-8 col-sm-8" style="">
+											<div class="col-md-7 col-sm-7">
 												<div class="nav-title">
 													<h5>General Info</h5>
-													<p>Requirement data that can be used on all services.</p>
+													<p style="font-size: 10px;font-family: 'Inter'; font-style: normal; font-weight: 500; letter-spacing: 0.02em; color: #8C8CA2;">Requirement data that can be used on all services.</p>
 												</div>
 											</div>
-											<div class="col-md-4 col-sm-4" style="text-align: end;">
-												<button style="font-size: 12px;font-weight: 500;" type="button" class="btn btn-outline-secondary waves-effect" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center">Cancel Order</button>
-												<button style="font-size: 12px;font-weight: 500;" type="button" class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center-booking">Booking Now</button>
+											<div class="col-md-5 col-sm-5" style="text-align: end;">
+												<button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">Cancel Order</button>
+												<button type="button" class="btn btn-primary" style="font-size: 12px;">Booking Now</button>
 											</div>
 										</div>
 									</div>

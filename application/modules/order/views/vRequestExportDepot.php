@@ -199,71 +199,7 @@
 											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 										</div>
 										<div class="row" id="list-cont">
-											<!--
-											<div class="col-lg-3">
-												<div class="card">
-													<div class="card-body">
-														<table>
-															<tr>
-																<td rowspan="2"><img src="<?php echo base_url('assets/images/icon/cont-20-dv.png'); ?>" /></td>
-																<td style="width:100%;">
-																	<select class="form-select" onchange="changeCont(this)" style="border:0;width:95px;font-weight:bold;">
-																		<option value="default"><b>Select Container</b></option>
-																		<option selected><b>20 Feet - General Purpose</b></option>
-																		<option><b>40 Feet - General Purpose</b></option>
-																		<option><b>45 Feet - High Cube</b></option>
-																		<option><b>20 Feet - Reefer</b></option>
-																		<option><b>40 Feet - Reefer High</b></option>
 
-																	</select>
-																	<label style="margin-left:8%;">General Purpose</label>
-																</td>
-															</tr>
-															<tr>
-																<td>
-																	<div style=" cursor: pointer; text-align: left; vertical-align: middle; margin-left: 1em">
-																	<span onClick="counting('min', this)" style="padding: 5px 10px;font-size:15px;background: #F8F8F9;border-radius: 4px;">-</span>
-																	<span class="t_count" style="padding: 5px;"><label>0</label></span>
-																	<span onClick="counting('plus', this)" style="padding: 5px 10px;font-size:15px;background: #F8F8F9;border-radius: 4px;">+</span>
-																	</div>
-																</td>
-															</tr>
-														</table>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-3">
-												<div class="card">
-													<div class="card-body">
-														<table>
-															<tr>
-																<td rowspan="2"><img src="<?php echo base_url('assets/images/icon/cont-null.png'); ?>" /></td>
-																<td style="width:100%;">
-																	<select class="form-select" onchange="changeCont(this)" style="border:0;width:100%;font-weight:bold;">
-																		<option  value="default"><b>Select Container</b></option>
-																		<option><b>20 Feet - General Purpose</b></option>
-																		<option><b>40 Feet - General Purpose</b></option>
-																		<option><b>45 Feet - High Cube</b></option>
-																		<option><b>20 Feet - Reefer</b></option>
-																		<option><b>40 Feet - Reefer High</b></option>
-																	</select>
-																	<label style="margin-left:8%;">&nbsp;</label>
-																</td>
-															</tr>
-															<tr>
-																<td>
-																	<div style=" cursor: pointer; text-align: left; vertical-align: middle; margin-left: 1em">
-																	<span onClick="counting('min', this)" style="padding: 5px 10px;font-size:15px;background: #F8F8F9;border-radius: 4px;">-</span>
-																	<span class="t_count" style="padding: 5px;"><label>0</label></span>
-																	<span onClick="counting('plus', this)" style="padding: 5px 10px;font-size:15px;background: #F8F8F9;border-radius: 4px;">+</span>
-																	</div>
-																</td>
-															</tr>
-														</table>
-													</div>
-												</div>
-											</div>
-														-->
 											<div class="col-lg-3">
 												<a href="javascript:void(0)" onClick="addNewCont();">
 													<div class="card" style="border: 2px dashed #C2D4FC;box-sizing: border-box;">
@@ -315,15 +251,15 @@
 								<div class="card mb-0">
 									<div class="card-body">
 										<div class="row">
-											<div class="col-md-8 col-sm-8">
+											<div class="col-md-7 col-sm-7">
 												<div class="nav-title">
 													<h5>General Info</h5>
-													<p>Requirement data that can be used on all services.</p>
+													<p style="font-size: 10px;font-family: 'Inter'; font-style: normal; font-weight: 500; letter-spacing: 0.02em; color: #8C8CA2;">Requirement data that can be used on all services.</p>
 												</div>
 											</div>
-											<div class="col-md-4 col-sm-4" style="text-align: end;">
-												<button style="font-size: 12px;font-weight: 500;" type="button" class="btn btn-outline-secondary waves-effect" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center">Cancel Order</button>
-												<button style="font-size: 12px;font-weight: 500;" type="button" class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center-booking">Booking Now</button>
+											<div class="col-md-5 col-sm-5" style="text-align: end;">
+												<button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">Cancel Order</button>
+												<button type="button" class="btn btn-primary" style="font-size: 12px;">Booking Now</button>
 											</div>
 										</div>
 									</div>

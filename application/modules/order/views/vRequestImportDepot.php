@@ -167,100 +167,7 @@
 											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 										</div>
 
-										<div class="row">
-											<!--<div class="col-lg-3">
-												<div class="card">
-													<div class="card-body">
-														<table>
-															<tr>
-																<td rowspan="2"><img src="<?php echo base_url('assets/images/icon/cont-20-dv.png'); ?>" /></td>
-																<td style="width:100%;">
-																	<select class="form-select" onchange="changeCont(this)" style="border:0;width:95px;font-weight:bold;">
-																		<option value="default"><b>Select Container</b></option>
-																		<option selected><b>20 Feet - General Purpose</b></option>
-																		<option><b>40 Feet - General Purpose</b></option>
-																		<option><b>45 Feet - High Cube</b></option>
-																		<option><b>20 Feet - Reefer</b></option>
-																		<option><b>40 Feet - Reefer High</b></option>
-
-																	</select>
-																	<label style="margin-left:8%;">General Purpose</label>
-																</td>
-															</tr>
-															<tr>
-																<td>
-																	<div style=" cursor: pointer; text-align: left; vertical-align: middle; margin-left: 1em">
-																	<span onClick="counting('min', this)" style="padding: 5px 10px;font-size:15px;background: #F8F8F9;border-radius: 4px;">-</span>
-																	<span class="t_count" style="padding: 5px;"><label>0</label></span>
-																	<span onClick="counting('plus', this)" style="padding: 5px 10px;font-size:15px;background: #F8F8F9;border-radius: 4px;">+</span>
-																	</div>
-																</td>
-															</tr>
-														</table>
-													</div>
-												</div>
-											</div>
-														-->
-											<div class="col-lg-4">
-												<div class="card">
-													<!-- <button type="button" style="float:right;position:absolute;" class=" btn-close" data-bs-dismiss="btn-close" aria-label="Close"></button> -->
-													<div class="alert-dismissible fade show">
-														<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-													</div>
-													<div class="card-body">
-														<table>
-															<tr>
-																<td rowspan="3"><img src="<?php echo base_url('assets/images/icon/cont-20-dv.png'); ?>" /></td>
-																<td style="width:100%;">
-																	<label style="font-weight: 500; font-size: 14px;color: #002985;margin-left:14px;">EGHU3826956</label>
-																</td>
-															</tr>
-															<tr>
-																<td>
-																	<label style="margin-left:8%;font-weight: 700; font-size: 14px;color: #0E0E2C;">20 Feet</label>
-																</td>
-															</tr>
-															<tr>
-																<td>
-																	<div style=" cursor: pointer; text-align: left; vertical-align: middle; margin-left: 1em">
-																		<p style="font-weight: 400; font-size: 10px;color: #8C8CA2;">General Purpose</p>
-																	</div>
-																</td>
-															</tr>
-														</table>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-4">
-												<div class="card">
-													<!-- <button type="button" style="float:right;position:absolute;" class=" btn-close" data-bs-dismiss="btn-close" aria-label="Close"></button> -->
-													<div class="alert-dismissible fade show">
-														<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-													</div>
-													<div class="card-body">
-														<table>
-															<tr>
-																<td rowspan="3"><img src="<?php echo base_url('assets/images/icon/cont-20-dv.png'); ?>" /></td>
-																<td style="width:100%;">
-																	<label style="font-weight: 500; font-size: 14px;color: #002985;margin-left:14px;">EGHU3826956</label>
-																</td>
-															</tr>
-															<tr>
-																<td>
-																	<label style="margin-left:8%;font-weight: 700; font-size: 14px;color: #0E0E2C;">20 Feet</label>
-																</td>
-															</tr>
-															<tr>
-																<td>
-																	<div style=" cursor: pointer; text-align: left; vertical-align: middle; margin-left: 1em">
-																		<p style="font-weight: 400; font-size: 10px;color: #8C8CA2;">General Purpose</p>
-																	</div>
-																</td>
-															</tr>
-														</table>
-													</div>
-												</div>
-											</div>
+										<div class="row" id="list-contDetil">
 											<div class="col-lg-4">
 												<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center-booking">
 													<div class="card" style="border: 2px dashed #C2D4FC;box-sizing: border-box;">
@@ -282,6 +189,36 @@
 														</div>
 													</div>
 												</a>
+											</div>
+											<div class="col-lg-4">
+												<div class="card">
+													<!-- <button type="button" style="float:right;position:absolute;" class=" btn-close" data-bs-dismiss="btn-close" aria-label="Close"></button> -->
+													<div class="alert-dismissible fade show">
+														<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+													</div>
+													<div class="card-body">
+														<table>
+															<tr>
+																<td rowspan="3"><img src="<?php echo base_url('assets/images/icon/cont-20-dv.png'); ?>" /></td>
+																<td style="width:100%;">
+																	<label style="font-weight: 500; font-size: 14px;color: #002985;margin-left:14px;">EGHU3826956</label>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<label style="margin-left:8%;font-weight: 700; font-size: 14px;color: #0E0E2C;">20 Feet</label>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div style=" cursor: pointer; text-align: left; vertical-align: middle; margin-left: 1em">
+																		<p style="font-weight: 400; font-size: 10px;color: #8C8CA2;">General Purpose</p>
+																	</div>
+																</td>
+															</tr>
+														</table>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -312,15 +249,15 @@
 								<div class="card mb-0">
 									<div class="card-body">
 										<div class="row">
-											<div class="col-md-8 col-sm-8" style="">
+											<div class="col-md-7 col-sm-7">
 												<div class="nav-title">
 													<h5>General Info</h5>
-													<p>Requirement data that can be used on all services.</p>
+													<p style="font-size: 10px;font-family: 'Inter'; font-style: normal; font-weight: 500; letter-spacing: 0.02em; color: #8C8CA2;">Requirement data that can be used on all services.</p>
 												</div>
 											</div>
-											<div class="col-md-4 col-sm-4" style="text-align: end;">
-												<button type="button" class="btn btn-outline-secondary waves-effect">Cancel Order</button>
-												<button type="button" class="btn btn-primary waves-effect waves-light">Save Order</button>
+											<div class="col-md-5 col-sm-5" style="text-align: end;">
+												<button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">Cancel Order</button>
+												<button type="button" class="btn btn-primary" style="font-size: 12px;">Booking Now</button>
 											</div>
 										</div>
 									</div>
@@ -361,7 +298,7 @@
 
 								<div class="row">
 									<div class="col-md-12 col-sm-12">
-										<input type="checkbox" class="" style="width: 20px; height: 20px;">
+										<input type="checkbox" onclick="chkall(this);" style="width: 20px; height: 20px;">
 										<label class="form-title" style="vertical-align:middle; text-align: center; margin-left:1em; ">Select All</label>
 									</div>
 								</div>
@@ -369,7 +306,7 @@
 								<div class="row mt-3">
 
 									<div class="col-md-1 col-sm-1">
-										<input type="checkbox" onclick="doSummary(this);" class="" style="width: 20px; height: 20px;">
+										<input type="checkbox" class="" style="width: 20px; height: 20px;">
 									</div>
 									<div class="col-md-11 col-sm-11" style="margin-left:-2.5em">
 										<div class="card">
@@ -548,7 +485,7 @@
 													</div><!-- end accordion -->
 												</div>
 												<a class="btn btn-secondary w-100 mt-5" href="<?= site_url('payment') ?>" id="btn-mthd" disabled>Select Payment Method</a>
-												<button type="button" class="btn btn-outline-light waves-effect mt-4 w-100" style="border: none !important">Cancel Order</button>
+												<!-- <button type="button" class="btn btn-outline-light waves-effect mt-4 w-100" style="border: none !important">Cancel Order</button> -->
 											</div>
 										</div>
 									</div>
@@ -567,26 +504,74 @@
 	function addCont() {
 
 		$('#list-cont').append('<div class="row" style="margin-top:20px;">\
-					<div class="col-md-4 col-sm-4">\
-						<select class="form-control">\
-							<option>Cont. type</option>\
-						</select>\
-					</div>\
-					<div class="col-md-3 col-sm-3">\
-						<select class="form-select">\
-							<option>Choose Size</option>\
-						</select>\
-					</div>\
-					<div class="col-md-4 col-sm-4">\
-						<input type="text" placeholder="Cont. Number" class="form-control" />\
-					</div>\
-					<div class="col-md-1 col-sm-1">\
-					<svg style="margin-top:8px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">\
+			<div class="col-md-4 col-sm-4">\
+				<select class="form-control">\
+					<option>Cont. type</option>\
+				</select>\
+			</div>\
+			<div class="col-md-3 col-sm-3">\
+				<select class="form-select">\
+					<option>Choose Size</option>\
+				</select>\
+			</div>\
+			<div class="col-md-4 col-sm-4">\
+				<input type="text" placeholder="Cont. Number" class="form-control" />\
+			</div>\
+			<div class="col-md-1 col-sm-1">\
+			<svg style="margin-top:8px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">\
 <path d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20V20ZM7 11H17V13H7V11Z" fill="#8C8CA2"/>\
 </svg>\
-					</div>\
-				</div>');
+			</div>\
+		</div>');
+	}
 
+	function SaveNewCont() {
+		$('#list-contDetil').append('<div class="col-lg-4">\
+			<div class="card">\
+				<div class="alert-dismissible fade show">\
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>\
+				</div>\
+				<div class="card-body">\
+					<table>\
+						<tr>\
+							<td rowspan="3"><img src="<?php echo base_url('assets/images/icon/cont-20-dv.png'); ?>" /></td>\
+							<td style="width:100%;">\
+								<label style="font-weight: 500; font-size: 14px;color: #002985;margin-left:14px;">EGHU3826956</label>\
+							</td>\
+						</tr>\
+						<tr>\
+							<td>\
+								<label style="margin-left:8%;font-weight: 700; font-size: 14px;color: #0E0E2C;">20 Feet</label>\
+							</td>\
+						</tr>\
+						<tr>\
+							<td>\
+								<div style=" cursor: pointer; text-align: left; vertical-align: middle; margin-left: 1em">\
+									<p style="font-weight: 400; font-size: 10px;color: #8C8CA2;">General Purpose</p>\
+								</div>\
+							</td>\
+						</tr>\
+					</table>\
+				</div>\
+			</div>');
+	}
+
+	//select all
+	function chkall(ele) {
+		var checkboxes = document.getElementsByTagName('input');
+		if (ele.checked) {
+			for (var i = 0; i < checkboxes.length; i++) {
+				if (checkboxes[i].type == 'checkbox') {
+					checkboxes[i].checked = true;
+				}
+			}
+		} else {
+			for (var i = 0; i < checkboxes.length; i++) {
+				if (checkboxes[i].type == 'checkbox') {
+					checkboxes[i].checked = false;
+				}
+			}
+		}
 	}
 
 	function nextSteps() {
@@ -671,64 +656,6 @@
 						<th>Onbehalf NPWP Address</th>
 						<th>Attachment</th>
 						<th>Action</th>
-					</tr>
-					<tr>
-						<td>90.000.000.0-000.000</td>
-						<td>Rizki Fatimah</td>
-						<td style="width:25%; padding-right:5%;">JL. Tambak Sari No. 5 RT.02
-							RW.09, Kel. Tambak Sari, Kec. Simokerto, Kota Surabaya, Provinsi Jawa Timur (16402)</td>
-						<td style="margin-left:5px;"><a href="#">NPWP Rizky.pdf</a></td>
-						<td>
-							<button type="button" class="btn btn-info waves-effect waves-light" style="font-size: 10px;">Choose NPWP</button>
-							<div class="mt-2">
-								<span>
-									<svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M0 4C0 1.79086 1.79086 0 4 0H32C34.2091 0 36 1.79086 36 4V28C36 30.2091 34.2091 32 32 32H4C1.79086 32 0 30.2091 0 28V4Z" fill="#ECF1F4" />
-										<path d="M15.9998 12.6667H13.9998C13.6462 12.6667 13.3071 12.8072 13.057 13.0573C12.807 13.3073 12.6665 13.6465 12.6665 14.0001V20.0001C12.6665 20.3537 12.807 20.6928 13.057 20.9429C13.3071 21.1929 13.6462 21.3334 13.9998 21.3334H19.9998C20.3535 21.3334 20.6926 21.1929 20.9426 20.9429C21.1927 20.6928 21.3332 20.3537 21.3332 20.0001V18.0001" stroke="#8C8CA2" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-										<path d="M16 18.0001H18L23.6667 12.3334C23.9319 12.0682 24.0809 11.7085 24.0809 11.3334C24.0809 10.9583 23.9319 10.5986 23.6667 10.3334C23.4014 10.0682 23.0417 9.91919 22.6667 9.91919C22.2916 9.91919 21.9319 10.0682 21.6667 10.3334L16 16.0001V18.0001Z" stroke="#8C8CA2" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-										<path d="M20.6665 11.3333L22.6665 13.3333" stroke="#8C8CA2" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-									</svg>
-								</span>
-								<span>
-
-									<svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<rect x="0.5" y="0.5" width="35" height="31" rx="3.5" fill="white" />
-										<path d="M21.3335 11.9999H24.6668V13.3333H23.3335V21.9999C23.3335 22.1767 23.2633 22.3463 23.1382 22.4713C23.0132 22.5963 22.8436 22.6666 22.6668 22.6666H13.3335C13.1567 22.6666 12.9871 22.5963 12.8621 22.4713C12.7371 22.3463 12.6668 22.1767 12.6668 21.9999V13.3333H11.3335V11.9999H14.6668V9.99992C14.6668 9.82311 14.7371 9.65354 14.8621 9.52851C14.9871 9.40349 15.1567 9.33325 15.3335 9.33325H20.6668C20.8436 9.33325 21.0132 9.40349 21.1382 9.52851C21.2633 9.65354 21.3335 9.82311 21.3335 9.99992V11.9999ZM22.0002 13.3333H14.0002V21.3333H22.0002V13.3333ZM18.9428 17.3333L20.1215 18.5119L19.1788 19.4546L18.0002 18.2759L16.8215 19.4546L15.8788 18.5119L17.0575 17.3333L15.8788 16.1546L16.8215 15.2119L18.0002 16.3906L19.1788 15.2119L20.1215 16.1546L18.9428 17.3333ZM16.0002 10.6666V11.9999H20.0002V10.6666H16.0002Z" fill="#8C8CA2" />
-										<rect x="0.5" y="0.5" width="35" height="31" rx="3.5" stroke="#ECF1F4" />
-									</svg>
-
-								</span>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>90.000.000.0-000.000</td>
-						<td>Rizki Fatimah</td>
-						<td style="width:25%; padding-right:5%;">JL. Tambak Sari No. 5 RT.02
-							RW.09, Kel. Tambak Sari, Kec. Simokerto, Kota Surabaya, Provinsi Jawa Timur (16402)</td>
-						<td style="margin-left:5px;"><a href="#">NPWP Rizky.pdf</a></td>
-						<td>
-							<button type="button" class="btn btn-info waves-effect waves-light" style="font-size: 10px;">Choose NPWP</button>
-							<div class="mt-2">
-								<span>
-									<svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M0 4C0 1.79086 1.79086 0 4 0H32C34.2091 0 36 1.79086 36 4V28C36 30.2091 34.2091 32 32 32H4C1.79086 32 0 30.2091 0 28V4Z" fill="#ECF1F4" />
-										<path d="M15.9998 12.6667H13.9998C13.6462 12.6667 13.3071 12.8072 13.057 13.0573C12.807 13.3073 12.6665 13.6465 12.6665 14.0001V20.0001C12.6665 20.3537 12.807 20.6928 13.057 20.9429C13.3071 21.1929 13.6462 21.3334 13.9998 21.3334H19.9998C20.3535 21.3334 20.6926 21.1929 20.9426 20.9429C21.1927 20.6928 21.3332 20.3537 21.3332 20.0001V18.0001" stroke="#8C8CA2" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-										<path d="M16 18.0001H18L23.6667 12.3334C23.9319 12.0682 24.0809 11.7085 24.0809 11.3334C24.0809 10.9583 23.9319 10.5986 23.6667 10.3334C23.4014 10.0682 23.0417 9.91919 22.6667 9.91919C22.2916 9.91919 21.9319 10.0682 21.6667 10.3334L16 16.0001V18.0001Z" stroke="#8C8CA2" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-										<path d="M20.6665 11.3333L22.6665 13.3333" stroke="#8C8CA2" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-									</svg>
-								</span>
-								<span>
-
-									<svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<rect x="0.5" y="0.5" width="35" height="31" rx="3.5" fill="white" />
-										<path d="M21.3335 11.9999H24.6668V13.3333H23.3335V21.9999C23.3335 22.1767 23.2633 22.3463 23.1382 22.4713C23.0132 22.5963 22.8436 22.6666 22.6668 22.6666H13.3335C13.1567 22.6666 12.9871 22.5963 12.8621 22.4713C12.7371 22.3463 12.6668 22.1767 12.6668 21.9999V13.3333H11.3335V11.9999H14.6668V9.99992C14.6668 9.82311 14.7371 9.65354 14.8621 9.52851C14.9871 9.40349 15.1567 9.33325 15.3335 9.33325H20.6668C20.8436 9.33325 21.0132 9.40349 21.1382 9.52851C21.2633 9.65354 21.3335 9.82311 21.3335 9.99992V11.9999ZM22.0002 13.3333H14.0002V21.3333H22.0002V13.3333ZM18.9428 17.3333L20.1215 18.5119L19.1788 19.4546L18.0002 18.2759L16.8215 19.4546L15.8788 18.5119L17.0575 17.3333L15.8788 16.1546L16.8215 15.2119L18.0002 16.3906L19.1788 15.2119L20.1215 16.1546L18.9428 17.3333ZM16.0002 10.6666V11.9999H20.0002V10.6666H16.0002Z" fill="#8C8CA2" />
-										<rect x="0.5" y="0.5" width="35" height="31" rx="3.5" stroke="#ECF1F4" />
-									</svg>
-
-								</span>
-							</div>
-						</td>
 					</tr>
 					<tr>
 						<td>90.000.000.0-000.000</td>
@@ -972,7 +899,7 @@
 				</div>
 
 				<div style="text-align: end;margin-top:20px;">
-					<button style="width:25%;" type="button" class="btn btn-primary waves-effect waves-light">Save</button>
+					<button style="width:25%;" type="button" class="btn btn-primary waves-effect waves-light" onClick="SaveNewCont();">Save</button>
 				</div>
 			</div>
 		</div><!-- /.modal-content -->
