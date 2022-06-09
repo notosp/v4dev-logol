@@ -20,12 +20,6 @@
 		background: #002985;
 		color: white;
 	}
-
-	.chk_custom {
-		background-color: #ECF1F4;
-		width: 20px;
-		height: 20px;
-	}
 </style>
 <div class="container-fluid">
 	<div class="row">
