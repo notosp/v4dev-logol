@@ -2142,3 +2142,8 @@ ul.v4-pagination {
 .v4-no-data-wrapper-button button {
   width: calc(100% - 192px);
 }
+
+input[name="upload"]:active,
+	input[name="upload"]:focus {
+		border-color: #86A8F8;
+	}
