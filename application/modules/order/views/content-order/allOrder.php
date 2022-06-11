@@ -399,7 +399,7 @@
 					</svg>
 				</a>
 				<br />
-				<button type="button" class="btn btn-outline-warning waves-effect waves-light">Give Feedback?</button>
+				<button type="button" class="btn btn-outline-warning waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#formRating">Give Feedback?</button>
 			</td>
 		</tr>
 		<tr>
@@ -783,6 +783,43 @@
 	</div>
 </form>
 <!-- end modal -->
+
+<!-- rating -->
+<form name="formRating" id="formRating" method="post" autocomplete="off" action="<?php echo site_url('set-rating'); ?>" enctype="multipart/form-data">
+	<div style="margin-top:5em">
+		<p style="font-size: 14px; font-weight: 700; color: #002985;">
+			Rate and Suggest
+		</p>
+		<p style="font-size: 12px; color: #002985;">
+			Give ratings and suggestions for our services, so that we can better provide better services and always collaborate together in the logistics world
+		</p>
+		<div class="mt-4">
+			<div class='rating-stars'>
+				<ul id='stars'>
+					<li class='star' title='Poor' data-value='1'>
+						<i class='fa fa-star fa-fw'></i>
+					</li>
+					<li class='star' title='Fair' data-value='2'>
+						<i class='fa fa-star fa-fw'></i>
+					</li>
+					<li class='star' title='Good' data-value='3'>
+						<i class='fa fa-star fa-fw'></i>
+					</li>
+					<li class='star' title='Excellent' data-value='4'>
+						<i class='fa fa-star fa-fw'></i>
+					</li>
+					<li class='star' title='WOW!!!' data-value='5'>
+						<i class='fa fa-star fa-fw'></i>
+					</li>
+				</ul>
+			</div>
+			<input type="hidden" name="ratingValue" id="ratingValue" wajib="yes" readonly>
+			<textarea name="ratingRemark" id="ratingRemark" style="border:none; max-height:5em; min-height:5em; background-color: #F8F8F9" class="form-control" placeholder="Write your suggest here" wajib="yes"></textarea>
+			<button type="button" class="btn btn-info w-100 mt-2" onclick="doRating('formRating');">Send</button>
+		</div>
+	</div>
+</form>
+<!-- end rating -->
 
 <script>
 	$('.multipleService').on('click', 'a', function() {
