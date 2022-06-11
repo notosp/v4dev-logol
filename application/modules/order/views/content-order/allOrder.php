@@ -399,7 +399,7 @@
 					</svg>
 				</a>
 				<br />
-				<button type="button" class="btn btn-outline-warning waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#formRating">Give Feedback?</button>
+				<button type="button" class="btn btn-outline-warning waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#formrating">Give Feedback?</button>
 			</td>
 		</tr>
 		<tr>
@@ -486,37 +486,35 @@
 <div class="row" style="background-color: white; border-bottom:none;">
 	<div class="navbar">
 		<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-			<input type="radio" class="btn-check" name="btnradio1" id="btnradio14" autocomplete="off" checked="">
-			<label class="btn btn-outline-info" for="btnradio14">
-				<<< /label>
-					&nbsp; &nbsp;
-					<input type="radio" class="btn-check" name="btnradio1" id="btnradio15" autocomplete="off">
-					<label class="btn btn-outline-info" for="btnradio15">
-						<< /label>
-							&nbsp; &nbsp;
-							<input type="radio" class="btn-check" name="btnradio1" id="btnradio16" autocomplete="off">
-							<label class="btn btn-outline-info" for="btnradio16">1</label>
-							&nbsp; &nbsp;
-							<input type="radio" class="btn-check" name="btnradio1" id="btnradio17" autocomplete="off">
-							<label class="btn btn-outline-info" for="btnradio17">2</label>
-							&nbsp; &nbsp;
-							<input type="radio" class="btn-check" name="btnradio1" id="btnradio18" autocomplete="off">
-							<label class="btn btn-outline-info" for="btnradio18">3</label>
-							&nbsp; &nbsp;
-							<input type="radio" class="btn-check" name="btnradio1" id="btnradio19" autocomplete="off" checked="">
-							<label class="btn btn-outline-info" for="btnradio19">4</label>
-							&nbsp; &nbsp;
-							<input type="radio" class="btn-check" name="btnradio1" id="btnradio20" autocomplete="off">
-							<label class="btn btn-outline-info" for="btnradio20">5</label>
-							&nbsp; &nbsp;
-							<input type="radio" class="btn-check" name="btnradio1" id="btnradio21" autocomplete="off">
-							<label class="btn btn-outline-info" for="btnradio21">6</label>
-							&nbsp; &nbsp;
-							<input type="radio" class="btn-check" name="btnradio1" id="btnradio22" autocomplete="off">
-							<label class="btn btn-outline-info" for="btnradio22">></label>
-							&nbsp; &nbsp;
-							<input type="radio" class="btn-check" name="btnradio1" id="btnradio23" autocomplete="off">
-							<label class="btn btn-outline-info" for="btnradio23">>></label>
+			<!-- <input type="radio" class="btn-check" name="btnradio1" id="btnradio22" autocomplete="off">
+			<label class="btn btn-outline-info" for="btnradio22">></label>
+			&nbsp; &nbsp;
+			<input type="radio" class="btn-check" name="btnradio1" id="btnradio23" autocomplete="off">
+			<label class="btn btn-outline-info" for="btnradio23">>></label>
+			&nbsp; &nbsp; -->
+			<input type="radio" class="btn-check" name="btnradio1" id="btnradio16" autocomplete="off">
+			<label class="btn btn-outline-info" for="btnradio16">1</label>
+			&nbsp; &nbsp;
+			<input type="radio" class="btn-check" name="btnradio1" id="btnradio17" autocomplete="off">
+			<label class="btn btn-outline-info" for="btnradio17">2</label>
+			&nbsp; &nbsp;
+			<input type="radio" class="btn-check" name="btnradio1" id="btnradio18" autocomplete="off">
+			<label class="btn btn-outline-info" for="btnradio18">3</label>
+			&nbsp; &nbsp;
+			<input type="radio" class="btn-check" name="btnradio1" id="btnradio19" autocomplete="off" checked="">
+			<label class="btn btn-outline-info" for="btnradio19">4</label>
+			&nbsp; &nbsp;
+			<input type="radio" class="btn-check" name="btnradio1" id="btnradio20" autocomplete="off">
+			<label class="btn btn-outline-info" for="btnradio20">5</label>
+			&nbsp; &nbsp;
+			<input type="radio" class="btn-check" name="btnradio1" id="btnradio21" autocomplete="off">
+			<label class="btn btn-outline-info" for="btnradio21">6</label>
+			&nbsp; &nbsp;
+			<input type="radio" class="btn-check" name="btnradio1" id="btnradio22" autocomplete="off">
+			<label class="btn btn-outline-info" for="btnradio22">></label>
+			&nbsp; &nbsp;
+			<input type="radio" class="btn-check" name="btnradio1" id="btnradio23" autocomplete="off">
+			<label class="btn btn-outline-info" for="btnradio23">>></label>
 		</div>
 		<span>
 			<select style="background-color: #F8F8F9; color: #868A92; border:none;">
@@ -785,40 +783,49 @@
 <!-- end modal -->
 
 <!-- rating -->
-<form name="formRating" id="formRating" method="post" autocomplete="off" action="<?php echo site_url('set-rating'); ?>" enctype="multipart/form-data">
-	<div style="margin-top:5em">
-		<p style="font-size: 14px; font-weight: 700; color: #002985;">
-			Rate and Suggest
-		</p>
-		<p style="font-size: 12px; color: #002985;">
-			Give ratings and suggestions for our services, so that we can better provide better services and always collaborate together in the logistics world
-		</p>
-		<div class="mt-4">
-			<div class='rating-stars'>
-				<ul id='stars'>
-					<li class='star' title='Poor' data-value='1'>
-						<i class='fa fa-star fa-fw'></i>
-					</li>
-					<li class='star' title='Fair' data-value='2'>
-						<i class='fa fa-star fa-fw'></i>
-					</li>
-					<li class='star' title='Good' data-value='3'>
-						<i class='fa fa-star fa-fw'></i>
-					</li>
-					<li class='star' title='Excellent' data-value='4'>
-						<i class='fa fa-star fa-fw'></i>
-					</li>
-					<li class='star' title='WOW!!!' data-value='5'>
-						<i class='fa fa-star fa-fw'></i>
-					</li>
-				</ul>
+<div id="formrating" class="modal fade bd-example-modal-sm" tabindex="-1" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-bs-scroll="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
-			<input type="hidden" name="ratingValue" id="ratingValue" wajib="yes" readonly>
-			<textarea name="ratingRemark" id="ratingRemark" style="border:none; max-height:5em; min-height:5em; background-color: #F8F8F9" class="form-control" placeholder="Write your suggest here" wajib="yes"></textarea>
-			<button type="button" class="btn btn-info w-100 mt-2" onclick="doRating('formRating');">Send</button>
+			<div class="modal-body">
+				<div>
+					<p style="font-size: 14px; font-weight: 700; color: #4A4A68; text-align: center;">
+						Rate and Suggest
+					</p>
+					<p style="font-size: 12px; color: #8C8CA1; text-align: center;">
+						Give ratings and suggestions for our services, so that we can better provide better services and always collaborate together in the logistics world
+					</p>
+					<div class="mt-4">
+						<div class='rating-stars' style="text-align: center;">
+							<ul id='stars'>
+								<li class='star' title='Poor' data-value='1'>
+									<i class='fa fa-star fa-fw'></i>
+								</li>
+								<li class='star' title='Fair' data-value='2'>
+									<i class='fa fa-star fa-fw'></i>
+								</li>
+								<li class='star' title='Good' data-value='3'>
+									<i class='fa fa-star fa-fw'></i>
+								</li>
+								<li class='star' title='Excellent' data-value='4'>
+									<i class='fa fa-star fa-fw'></i>
+								</li>
+								<li class='star' title='WOW!!!' data-value='5'>
+									<i class='fa fa-star fa-fw'></i>
+								</li>
+							</ul>
+						</div>
+						<input type="hidden" name="ratingValue" id="ratingValue" wajib="yes" readonly>
+						<textarea name="ratingRemark" id="ratingRemark" style="border:none; max-height:5em; min-height:5em; background-color: #F8F8F9" class="form-control" placeholder="Write your suggest here" wajib="yes"></textarea>
+						<button type="button" class="btn btn-info w-100 mt-2" onclick="doRating('formRating');">Give Feedback</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</form>
+</div>
 <!-- end rating -->
 
 <script>

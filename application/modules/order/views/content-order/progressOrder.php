@@ -382,12 +382,6 @@
 <div id="myModal" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-bs-scroll="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<div class="modal-header">
-				<div>
-					<h5 class="modal-title" id="myModalLabel">Status Order</h5>
-					<h7>Monitoring your order progress</h7>
-				</div>
-			</div>
 			<div class="modal-body" style="justify-content: space-between">
 				<svg style="margin-left: 35px; margin-right: 35px;" width="56" height="94" viewBox="0 0 56 94" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M28 3.5C28 1.567 29.5731 -0.0225887 31.491 0.218374C37.6299 0.989647 43.3776 3.77966 47.799 8.20101C53.05 13.452 56 20.5739 56 28C56 35.4261 53.05 42.548 47.799 47.799C43.3776 52.2203 37.6299 55.0104 31.491 55.7816C29.5731 56.0226 28 54.433 28 52.5C28 50.567 29.5778 49.0298 31.484 48.7091C35.7611 47.9895 39.7419 45.9565 42.8492 42.8492C46.7875 38.911 49 33.5695 49 28C49 22.4305 46.7875 17.089 42.8492 13.1508C39.7419 10.0435 35.7611 8.01049 31.484 7.29093C29.5778 6.97024 28 5.433 28 3.5Z" fill="#8C8CA2" />
@@ -478,38 +472,47 @@
 </div>
 
 <!-- rating -->
-<form name="formRating" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-bs-scroll="true" id="formRating" method="post" autocomplete="off" action="<?php echo site_url('set-rating'); ?>" enctype="multipart/form-data">
-	<div style="margin-top:5em">
-		<p style="font-size: 14px; font-weight: 700; color: #002985;">
-			Rate and Suggest
-		</p>
-		<p style="font-size: 12px; color: #002985;">
-			Give ratings and suggestions for our services, so that we can better provide better services and always collaborate together in the logistics world
-		</p>
-		<div class="mt-4">
-			<div class='rating-stars'>
-				<ul id='stars'>
-					<li class='star' title='Poor' data-value='1'>
-						<i class='fa fa-star fa-fw'></i>
-					</li>
-					<li class='star' title='Fair' data-value='2'>
-						<i class='fa fa-star fa-fw'></i>
-					</li>
-					<li class='star' title='Good' data-value='3'>
-						<i class='fa fa-star fa-fw'></i>
-					</li>
-					<li class='star' title='Excellent' data-value='4'>
-						<i class='fa fa-star fa-fw'></i>
-					</li>
-					<li class='star' title='WOW!!!' data-value='5'>
-						<i class='fa fa-star fa-fw'></i>
-					</li>
-				</ul>
+<div id="formrating" class="modal fade bd-example-modal-sm" tabindex="-1" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-bs-scroll="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
-			<input type="hidden" name="ratingValue" id="ratingValue" wajib="yes" readonly>
-			<textarea name="ratingRemark" id="ratingRemark" style="border:none; max-height:5em; min-height:5em; background-color: #F8F8F9" class="form-control" placeholder="Write your suggest here" wajib="yes"></textarea>
-			<button type="button" class="btn btn-info w-100 mt-2" onclick="doRating('formRating');">Send</button>
+			<div class="modal-body">
+				<div>
+					<p style="font-size: 14px; font-weight: 700; color: #4A4A68; text-align: center;">
+						Rate and Suggest
+					</p>
+					<p style="font-size: 12px; color: #8C8CA1; text-align: center;">
+						Give ratings and suggestions for our services, so that we can better provide better services and always collaborate together in the logistics world
+					</p>
+					<div class="mt-4">
+						<div class='rating-stars' style="text-align: center;">
+							<ul id='stars'>
+								<li class='star' title='Poor' data-value='1'>
+									<i class='fa fa-star fa-fw'></i>
+								</li>
+								<li class='star' title='Fair' data-value='2'>
+									<i class='fa fa-star fa-fw'></i>
+								</li>
+								<li class='star' title='Good' data-value='3'>
+									<i class='fa fa-star fa-fw'></i>
+								</li>
+								<li class='star' title='Excellent' data-value='4'>
+									<i class='fa fa-star fa-fw'></i>
+								</li>
+								<li class='star' title='WOW!!!' data-value='5'>
+									<i class='fa fa-star fa-fw'></i>
+								</li>
+							</ul>
+						</div>
+						<input type="hidden" name="ratingValue" id="ratingValue" wajib="yes" readonly>
+						<textarea name="ratingRemark" id="ratingRemark" style="border:none; max-height:5em; min-height:5em; background-color: #F8F8F9" class="form-control" placeholder="Write your suggest here" wajib="yes"></textarea>
+						<button type="button" class="btn btn-info w-100 mt-2" onclick="doRating('formRating');">Give Feedback</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</form>
+</div>
 <!-- end rating -->
