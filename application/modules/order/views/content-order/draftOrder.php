@@ -355,6 +355,37 @@
 			</td>
 		</tr>
 	</table>
+	<div class="v4-nav-pagination">
+		<div class="v4-nav-pagination-left">
+			<ul class="pagination" style="border-bottom:none;" id="cek">
+				<li class="page-item">
+					<a class="page-link" href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+						<span class="sr-only">Previous</span>
+					</a>
+				</li>
+				<li class="page-item"><a class="page-link active" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">4</a></li>
+				<li class="page-item"><a class="page-link" href="#">5</a></li>
+				<li class="page-item"><a class="page-link" href="#">6</a></li>
+				<li class="page-item">
+					<a class="page-link" href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+						<span class="sr-only">Next</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="v4-nav-pagination-right">
+			<div style="float:right; text-align:center;">
+				<select style="background-color: #F8F8F9; color: #868A92; border:none;">
+					<option>8</option>
+				</select> &nbsp; showing 1-8 of 100
+			</div>
+		</div>
+	</div>
 </div>
 <!-- sample modal content -->
 <div id="myModal" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-bs-scroll="true">
