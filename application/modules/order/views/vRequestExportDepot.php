@@ -131,11 +131,11 @@
 														<div class="mb-3">
 															<label for="example-date-input" class="form-label">Delivery Order Attachment <span style="color: #E05252;">*</span></label>
 															<div class="input-group" onclick="javascript:document.getElementById('file').click();">
-																<input class="form-control" name="upload" id="txt" type="text" placeholder="Upload Document">
+																<input class="form-control" name="upload" id="uploadAttachment" type="text" placeholder="Upload Document">
 																<img src="<?php echo base_url('assets/images/v4-input-file-icon.png'); ?>" class="input-group-text" />
 																</input>
 															</div>
-															<input id="file" type="file" style='visibility: hidden;' name="img" onchange="ChangeText(this, 'txt');" />
+															<input id="file" type="file" style='visibility: hidden;' name="img" onchange="ChangeText(this, 'uploadAttachment');" />
 														</div>
 													</div>
 												</div>
@@ -847,13 +847,13 @@
 							<input type="text" name="numberCustomer" class="form-control" placeholder="Onbehalf of Customer Number" />
 						</div>
 						<div class="col-md-6">
-							<div class="input-group" name="upload" onclick="javascript:document.getElementById('file').click();">
-								<input class="form-control" style="border-color:#86A8F8; color:#0D51F1" id="txt" type="text" value="Upload Onbhealf Of Customer">
+							<div class="input-group" name="upload" onclick="javascript:document.getElementById('file2').click();">
+								<input class="form-control" style="border-color:#86A8F8; color:#0D51F1" id="uploadDocument" type="text" value="Upload Onbhealf Of Customer">
 								<img src="<?php echo base_url('assets/images/v4-input-file-icon.png'); ?>" class="input-group-text" style="border-color:#86A8F8" />
 								</input>
 							</div>
 							<span style="font-size: 12px; line-height: 16px; letter-spacing: 0.02em; color: #8C8CA2;">must in pdf file format</span>
-							<input id="file2" type="file" style='visibility: hidden;' name="img" onchange="ChangeText(this, 'txt');" />
+							<input id="file2" type="file" style='visibility: hidden;' name="img" onchange="ChangeText(this, 'uploadDocument');" />
 						</div>
 					</div>
 					<div class="row mb-3">
@@ -930,13 +930,13 @@
 							<input type="text" name="numberCustomer" class="form-control" placeholder="Onbehalf of Customer Number" />
 						</div>
 						<div class="col-md-6">
-							<div class="input-group" name="upload" onclick="javascript:document.getElementById('file').click();">
-								<input class="form-control" style="border-color:#86A8F8; color:#0D51F1" id="txt" accept=".jpg, .pdf" type="text" value="Upload Onbhealf Of Customer">
+							<div class="input-group" name="upload" onclick="javascript:document.getElementById('file3').click();">
+								<input class="form-control" style="border-color:#86A8F8; color:#0D51F1" id="uploadDocument2" accept=".jpg, .pdf" type="text" value="Upload Onbhealf Of Customer">
 								<img src="<?php echo base_url('assets/images/v4-input-file-icon.png'); ?>" class="input-group-text" style="border-color:#86A8F8" />
 								</input>
 							</div>
 							<span style="font-size: 12px; line-height: 16px; letter-spacing: 0.02em; color: #8C8CA2;">must in pdf file format</span>
-							<input id="file2" type="file" style='visibility: hidden;' name="img" onchange="ChangeText(this, 'txt');" />
+							<input id="file3" type="file" style='visibility: hidden;' name="img" onchange="ChangeText(this, 'uploadDocument2');" />
 						</div>
 					</div>
 					<div class="row mb-3">

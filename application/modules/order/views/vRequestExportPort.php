@@ -858,13 +858,13 @@
 							<input type="text" name="numberCustomer" class="form-control" placeholder="Onbehalf of Customer Number" />
 						</div>
 						<div class="col-md-6">
-							<div class="input-group" name="upload" onclick="javascript:document.getElementById('file').click();">
-								<input class="form-control" style="border-color:#86A8F8; color:#0D51F1" id="txt" type="text" value="Upload Onbhealf Of Customer">
+							<div class="input-group" name="upload" onclick="javascript:document.getElementById('file1').click();">
+								<input class="form-control" style="border-color:#86A8F8; color:#0D51F1" id="upload1" type="text" value="Upload Onbhealf Of Customer">
 								<img src="<?php echo base_url('assets/images/v4-input-file-icon.png'); ?>" class="input-group-text" style="border-color:#86A8F8" />
 								</input>
 							</div>
 							<span style="font-size: 12px; line-height: 16px; letter-spacing: 0.02em; color: #8C8CA2;">must in pdf file format</span>
-							<input id="file2" type="file" style='visibility: hidden;' onchange="ChangeText(this, 'txt');" />
+							<input id="file1" type="file" style='visibility: hidden;' onchange="ChangeText(this, 'upload1');" />
 						</div>
 					</div>
 					<div class="row mb-3">
@@ -940,13 +940,13 @@
 							<input type="text" name="numberCustomer" class="form-control" placeholder="Onbehalf of Customer Number" />
 						</div>
 						<div class="col-md-6">
-							<div class="input-group" name="upload" onclick="javascript:document.getElementById('file').click();">
-								<input class="form-control" style="border-color:#86A8F8; color:#0D51F1" id="txt" type="text" value="Upload Onbhealf Of Customer">
+							<div class="input-group" name="upload" onclick="javascript:document.getElementById('file2').click();">
+								<input class="form-control" style="border-color:#86A8F8; color:#0D51F1" id="uploadDocument" type="text" value="Upload Onbhealf Of Customer">
 								<img src="<?php echo base_url('assets/images/v4-input-file-icon.png'); ?>" class="input-group-text" style="border-color:#86A8F8" />
 								</input>
 							</div>
 							<span style="font-size: 12px; line-height: 16px; letter-spacing: 0.02em; color: #8C8CA2;">must in pdf file format</span>
-							<input id="file2" type="file" style='visibility: hidden;' name="img" onchange="ChangeText(this, 'txt');" />
+							<input id="file2" type="file" style='visibility: hidden;' name="img" onchange="ChangeText(this, 'uploadDocument');" />
 						</div>
 					</div>
 					<div class="row mb-3">
