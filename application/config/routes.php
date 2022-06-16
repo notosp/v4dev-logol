@@ -113,6 +113,7 @@ $route['order-issue-detil']['GET']                      = 'order/';
 $route['detil-order-wait-payment']['GET']               = 'order/detailOrderwaitpay';
 $route['detil-wait-total-amount']['GET']                 = 'order/detilWaitTotalAmount';
 $route['detil-order-wait-payment-fin']['GET']           = 'order/detailOrderwaitpayfin';
+$route['detil-order-issues']['GET']                     = 'order/detilOrderIssues';
 
 $route['set-rating']['POST']                            = 'profile/setRating';
 $route['e-gatepass']['GET']                             = 'home/getEGatepass';

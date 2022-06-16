@@ -261,4 +261,20 @@ class Order extends CI_Controller
 			$this->index();
 		}
 	}
+
+	public function detilOrderIssues()
+	{
+		if (!$this->newsession->userdata('loggedIn')) {
+			redirect(site_url('login'));
+			exit();
+		} else {
+			$arrData = [
+				'profileAttribute' => $_SESSION,
+				'isRequirement' => $this->DashboardService->isCompleteProfile()
+			];
+			$this->content = $this->load->view('order/vDetailOrderIssues', $arrData, true);
+
+			$this->index();
+		}
+	}
 }

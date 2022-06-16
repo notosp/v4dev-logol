@@ -294,7 +294,7 @@
 
 								<div class="row">
 									<div class="col-md-12 col-sm-12">
-										<input type="checkbox" onclick="doSummary(this);" class="" style="width: 20px; height: 20px;">
+										<input type="checkbox" id="checkall" class="" style="width: 20px; height: 20px;">
 										<label class="form-title" style="vertical-align:middle; text-align: center; margin-left:1em; ">Select All</label>
 									</div>
 								</div>
@@ -302,7 +302,7 @@
 								<div class="row mt-3">
 
 									<div class="col-md-1 col-sm-1">
-										<input type="checkbox" class="" style="width: 20px; height: 20px;">
+										<input type="checkbox" class="checkitem" style="width: 20px; height: 20px;">
 									</div>
 									<div class="col-md-11 col-sm-11" style="margin-left:-2.5em">
 										<div class="card">
@@ -383,7 +383,7 @@
 								<div class="row mt-3">
 
 									<div class="col-md-1 col-sm-1">
-										<input type="checkbox" class="" style="width: 20px; height: 20px;">
+										<input type="checkbox" class="checkitem" style="width: 20px; height: 20px;">
 									</div>
 									<div class="col-md-11 col-sm-11" style="margin-left:-2.5em">
 										<div class="card">
@@ -583,22 +583,17 @@
 		$("#done").show();
 	}
 	//select all
-	function doSummary(ele) {
-		var checkboxes = document.getElementsByTagName('input');
-		if (ele.checked) {
-			for (var i = 0; i < checkboxes.length; i++) {
-				if (checkboxes[i].type == 'checkbox') {
-					checkboxes[i].checked = true;
-				}
-			}
-		} else {
-			for (var i = 0; i < checkboxes.length; i++) {
-				if (checkboxes[i].type == 'checkbox') {
-					checkboxes[i].checked = false;
-				}
-			}
+	$("#checkall").change(function() {
+		$(".checkitem").prop("checked", $(this).prop("checked"))
+	})
+	$(".checkitem").change(function() {
+		if ($(this).prop("checked") == false) {
+			$("#checkall").prop("checked", false)
 		}
-	}
+		if ($(".checkitem:checked").length == $(".checkitem").length) {
+			$("#checkall").prop("checked", true)
+		}
+	})
 
 	function selectDepo(id) {
 		if (id != "") {

@@ -61,7 +61,7 @@
 				<th class="px-3">Action</th>
 			</tr>
 		</thead>
-		<tbody id="v4-list-user-active">
+		<tbody>
 			<tr>
 				<td class="px-3">
 					<div>Number</div>
@@ -693,9 +693,9 @@
 						<div class="col-md-12 col-sm-12">
 							<input type="checkbox" class="" style="width: 20px; height: 20px;">
 							<label class="form-title" style="vertical-align:middle; text-align: center; margin-left:1em; ">Select All</label>
-							<a href="#" style="margin-left:159px;" class="badge rounded-pill badge-soft-primary" data-bs-toggle="modal" data-bs-target="#confirmEmail">Send Email</a>
-							&nbsp; <span class="badge rounded-pill badge-soft-primary">Download</span>
-							&nbsp; <span class="badge rounded-pill badge-soft-success">Print</span>
+							<span style="margin-left:159px; cursor:pointer;" class="badge rounded-pill badge-soft-primary" data-bs-toggle="modal" data-bs-target="#confirmEmail">Send Email</span>
+							&nbsp; <span class="badge rounded-pill badge-soft-primary" style="cursor:pointer">Download</span>
+							&nbsp; <span class="badge rounded-pill badge-soft-success" style="cursor:pointer">Print</span>
 						</div>
 					</div>
 					<div class="row">
